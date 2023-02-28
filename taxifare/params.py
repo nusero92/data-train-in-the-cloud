@@ -5,7 +5,7 @@ import numpy as np
 # $ONLY_TO_cloud_lecture_BEGIN
 DATA_SIZE = "1k" # ["1k", "200k", "all"]
 CHUNK_SIZE = 200
-GCP_PROJECT = "<your project id>" # TO COMPLETE
+GCP_PROJECT = "canvas-replica-374915" # TO COMPLETE
 GCP_PROJECT_WAGON = "wagon-public-datasets"
 BQ_DATASET = "taxifare"
 BQ_REGION = "EU"
@@ -29,6 +29,8 @@ EVALUATION_START_DATE = os.environ.get("EVALUATION_START_DATE")
 GCR_IMAGE = os.environ.get("GCR_IMAGE")
 GCR_REGION = os.environ.get("GCR_REGION")
 GCR_MEMORY = os.environ.get("GCR_MEMORY")
+TABLE=f"processed_{DATA_SIZE}"
+
 
 ##################  CONSTANTS  #####################
 LOCAL_DATA_PATH = os.path.join(os.path.expanduser('~'), ".lewagon", "mlops", "data")
